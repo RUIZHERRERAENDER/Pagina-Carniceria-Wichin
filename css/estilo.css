@@ -1,0 +1,465 @@
+*{
+ padding: 0;
+ margin: 0;
+ text-decoration: none;
+ list-style: none;
+ box-sizing: border-box;
+}
+
+/*navegación por botones*/
+
+nav{
+    background:#f2c553;
+    height: 50px;
+    width: 100%;
+}
+
+.menu-fixed {
+    position:fixed;
+    z-index: 1000;
+    top:0;
+    width: 100%;
+    max-width: 2000px;
+    box-shadow: 0px 0px 6px rgba(0,0,0,.5);
+}
+
+.enlace{
+    position:absolute;
+    padding: 8px 35px;
+}
+.logo{
+    height: 140px;
+}
+nav ul{
+    float: right;
+    margin-right: 40px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 50px;
+    margin: 0 20px;
+}
+nav ul li a{
+    color:rgb(255, 255, 255);
+    font-size: 18px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 7px 13px;
+    border-radius: 3px;
+}
+li a.active, li a:hover{
+    background: #000000;
+    padding: 15px 20px;
+    transition: .5s;
+}
+
+/*navegación por botones*/
+
+.checkbtn{
+    font-size: 80px;
+    color:#fff;
+    float:right;
+    line-height: 0px;
+    margin-right: 40px;
+    cursor:pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+h1{
+    text-align: center;
+    padding: 40px 15px 10px 15px;
+    font-size: 60px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(19, 19, 86);
+}
+h2{
+    text-align: center;
+    padding: 40px 15px 10px 15px;
+    font-size: 40px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(19, 19, 86);
+}
+
+h3{
+    text-align: center;
+    padding: 40px 15px 10px 15px;
+    font-size: 40px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(19, 19, 86);
+}
+.Titulo-h1{
+    background-color: white;
+    font-family:cursive;
+}
+
+
+.frase{
+    text-align: center;
+    padding: 2px ;
+    font-size:300px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}   
+
+.separacion {
+    display: block;
+    width: 85px;
+    height: 4px;
+    background: rgb(255, 0, 0);
+    margin: 18px auto;
+}
+
+.background {
+    width: 100%;
+    height: 100%;
+}
+
+
+.slider {
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 60px;
+    margin-top: 50px;
+    height: 550px;
+    overflow: hidden;
+}
+
+.slider ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: cambio 15s; 
+    animation-iteration-count:infinite;
+    animation-direction:alternate;
+}
+
+.slider li {
+    width: 100%;
+    list-style: none;
+}
+
+.slider img {
+    width: 100%;
+    height: 800px;
+}
+
+@keyframes cambio {
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+    
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+    
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+    
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+}
+
+/*división horizontalmente*/
+
+.descripción{       
+    padding: 30px 70px 50px 30px;
+    display:flex;
+    font-size:18px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-right: 3px;
+}
+
+/*división horizontalmente*/
+
+.info{
+    background-color:rgb(216, 213, 213);
+    padding: 40px 40px 40px 40px;
+    margin-right: 180px;
+    text-align: justify;
+    border-radius: 20px;
+}
+
+.texto{
+    margin: 20px;
+    font-size: 18px;
+}
+.subtitulo1{
+    font-size: x-large;
+    font-family: cursive;
+}  
+
+footer{
+    background-color: #f2c553;
+    padding: 10px;
+    text-align: right;
+}
+
+.redes{
+    padding-right: 1000px;
+}
+
+.info2{
+    background-color:rgb(216, 213, 213);
+    padding: 30px 50px 30px 50px;
+    margin-right: 90px;
+    margin-left: 90px;
+    text-align: justify;
+    border-radius: 20px;
+}
+
+.descripción2{       
+    padding: 40px 70px 100px 30px;
+    display:flex;
+    font-size: large;
+    font-family:cursive;
+}
+
+/*cuadro del slogan*/
+
+.caja{
+    color: #fff;
+    background-color: rgb(255, 0, 0);
+    width: 480px;
+    height: 35px;
+    padding: 6px;
+    font-size: 21px;
+    font-family:unset;
+    border-radius: 10px;  
+    margin-bottom: 15px;
+}
+
+/*cuadro del slogan*/
+
+.Marco{
+    border:5px #f2c553 solid;
+    margin-right: 20px;
+    margin-left: 25px;
+    padding: 5px 5px 2px 5px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,.5);
+    animation-name: mover;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}  
+@keyframes mover{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(4%);
+    }
+}
+
+
+.Marco2{
+    border:5px #f2c553 solid;
+    box-shadow: 5px 4px 5px rgba(0,0,0,.5);
+    margin-left:250px;
+    margin-right: 250px;
+}
+
+.Marco3{
+    border:5px #f2c553 solid;
+    margin-right: 24px;
+    margin-left: 80px;
+    padding: 5px 5px 2px 5px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,.5);
+    animation-name: mover;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}  
+@keyframes mover{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(4%);
+    }
+}
+
+.picture{
+    border:5px hsl(43, 86%, 64%) solid;
+    padding: 5px 5px 2px 5px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,.5);
+    animation-name: cambiarposicion;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}  
+@keyframes cambiarposicion{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(5%);
+    }
+}
+
+.picture2{
+    border:5px hsl(43, 86%, 64%) solid;
+    padding: 5px 5px 2px 5px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,.5);
+    width: 400px;
+    height: 370px;
+} 
+
+producto{
+    font-size: x-large;
+    font-family:cursive;
+}
+
+precio{
+    font-size:20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*división horizontalmente*/
+
+figure{
+    display: flex;
+}
+
+/*división horizontalmente*/
+
+.imagen_servicios{
+    display: flex;
+}
+
+.formulario{
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+    margin: 0;
+}
+
+form{
+    width: 450px;
+    margin: auto;
+    background:#f2c553;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 7px;
+}
+
+input, textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 14px;
+    border: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+textarea{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+
+#boton{
+    background: #000000;
+    color:#fff;
+    padding: 18px;
+    font-size: 18px;
+    border-radius: 7px;
+}
+
+#boton:hover{
+    cursor: pointer;
+}
+
+@media(max-width:480px){
+    form{
+        width:100%;
+    }
+}
+
+ul.slider2{
+    position: relative;
+    width: 300px;
+    height: 250px;
+    margin: 0px;
+}
+
+ul.slider2 li {
+    position: absolute;
+    left: 0px;
+    padding-left: 280px;
+    top: 30px;
+    width: inherit;
+    height: inherit;
+    opacity: 0;
+    transition: opacity .5s;
+    background:#fff;
+}
+
+ul.slider2 li img{
+    width: 300px;
+    height: 250px;
+    object-fit: cover;
+}
+
+ul.slider2 li:first-child {
+    opacity: 1; 
+}
+
+ul.slider2 li:target {
+    opacity: 1;
+}
+
+.menu{
+    text-align: center;
+    margin: 20px;
+    margin-bottom: 20px;
+}
+
+.menu li{
+    display: inline-block;
+    text-align: center;
+}
+
+.menu li a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color:#f2c553;
+    padding: 8px;
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+    border-radius: 100%;
+}
+
+.carousel__contenedor{
+    position:relative;
+}
+
+.carousel__anterior, 
+.carousel__siguiente{
+    position: absolute;
+    display: block;
+    width:0px;
+    height:300px;
+    border: none;
+    top:calc(50%-35%);
+    cursor:pointer;
+    line-height: 30px;
+    text-align: center;
+    background: none;
+    color:#f10606;
+    opacity: 100%;
+}
+
+.carousel__anterior{
+    left:50px;
+}
+
+.carousel__siguiente{
+    right:50px;
+}
+
+.carousel__lista{
+    overflow: hidden;
+}
+
